@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#F6E4E2">
-<title>Samir Khan &amp; Ishra Khan — Wedding Invitation</title>
+<title>Sameer Khan &amp; Ishra Khan — Wedding Invitation</title>
 <!-- External assets: Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -187,7 +187,7 @@ body:not(.ready) .hero .rv{opacity:0}
 .cd span{font:700 .7rem var(--sans);letter-spacing:.1em;text-transform:uppercase;opacity:.8}
 .married{font:400 3rem var(--script);color:var(--goldl);margin:20px 0}
 
-/* INTERACTIVE BLESSING & VOW FLIP CARDS (Replaces Couple Images) */
+/* INTERACTIVE BLESSING & VOW FLIP CARDS */
 .vow-hint{font:700 .72rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--goldl);opacity:.85;margin:30px 0 14px}
 .vows{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;perspective:900px}
 .vcard{position:relative;width:100%;min-height:158px;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.2,.8,.2,1);border-radius:16px;text-align:center}
@@ -324,7 +324,7 @@ fieldset{border:0;padding:0;display:flex;gap:10px;flex-wrap:wrap}
 /* ================= CLIENT CONFIGURATION — edit this block only ================= */
 const WEDDING_CONFIG = {
   mode: "live",
-  groom: "Samir Khan",
+  groom: "Sameer Khan",
   bride: "Ishra Khan",
   nameOrder: "groom-first",
   initials: "S & I",
@@ -494,7 +494,7 @@ else{
     front.innerHTML=ICONS[item.icon]||ICONS.flower;
     front.append(el("div","vtitle",item.title),el("span","vsub",item.subtitle||"Tap to flip"));
     const back=el("div","vface vback");
-    back.append(el("p",null,item.quote),el("span",null,"Samir & Ishra"));
+    back.append(el("p",null,item.quote),el("span",null,"Sameer & Ishra"));
     btn.append(front,back);
     btn.onclick=()=>{
       const st=btn.classList.toggle("flipped");
